@@ -1,0 +1,48 @@
+@charset "UTF-8"
+
+// Экраны
+// ======
+$desktop: 1200px
+$tablet: 991px
+$mobail: 767px
+$sm-mobail: 576px
+
+// Цвета
+// ======
+$iron: #848A9A
+$rich-red: #E52D2D
+$light-gray: #EFF0F1
+$black: #000000
+$white: #FFFFFF
+$dark-grey: #848A9A
+$red: #FF3C3C
+$blue: #3F8FE5
+$light-red: #FB7A7A
+
+@mixin max-width($width)
+  @media only screen and (max-width: $width)
+    @content
+
+@mixin min-width($width)
+  @media only screen and (min-width: $width)
+    @content
+
+// Шрифты
+// ======
+@mixin roboto($size, $lineHeight)
+  font: normal 400 #{$size}/#{$lineHeight} "Roboto", sans-serif
+
+@mixin roboto-medium($size, $lineHeight)
+  font: normal 500 #{$size}/#{$lineHeight} "Roboto", sans-serif
+
+@mixin roboto-bold($size, $lineHeight)
+  font: normal 700 #{$size}/#{$lineHeight} "Roboto", sans-serif
+
+@mixin alegreya-bold($size, $lineHeight)
+  font: normal 700 #{$size}/#{$lineHeight} "Alegreya", sans-serif
+
+@mixin alegreya-extrabold($size, $lineHeight)
+  font: normal 800 #{$size}/#{$lineHeight} "Alegreya", sans-serif
+
+@mixin alegreya-black($size, $lineHeight)
+  font: normal 900 #{$size}/#{$lineHeight} "Alegreya", sans-serif
